@@ -1,13 +1,17 @@
-import './app.css';
+import React from 'react';
+import { Provider } from 'react-redux';
+import { store } from './redux/store';
+import { AppRouter } from './routers/AppRouter';
+import './App.css'
 
-export const App = () => {
+function App() {
   return (
-    <div>
-      <h1>Hola mundo!!</h1>
-
-      <p>love</p> <p>hate</p>
-      <h1>JS</h1>
-      <input type="text" name="" id="" />
-    </div>
+    <Provider store={store}>
+      <div className="app">
+        <AppRouter />
+      </div>
+    </Provider>
   )
 }
+
+export default App;

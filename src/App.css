@@ -1,7 +1,10 @@
-body {
-  background: greenyellow;
+.container {
+  margin: 0px 40px;
 }
 
-img {
-  width: 50px;
+@media (max-width: 534px) {
+  .container {
+    margin: 0px 10px;
+  }
+
 }
